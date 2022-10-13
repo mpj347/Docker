@@ -12,7 +12,6 @@ on:
       steps:
         - uses: actions/checkout@v1
         - name: Build and Push Image
-          run:
-          echo "${{ secrets.DOCKER_PASSWORD }} | docker login -u "mpj347" --password-stdin
-          docker image build -t mpj347/Docker:v1
-          docker push mpj347/Docker
+          run: echo "${{ secrets.DOCKER_PASSWORD }} | docker login -u "mpj347" --password-stdin
+          run: docker image build -t mpj347/Docker:v1
+          run: docker push mpj347/Docker
