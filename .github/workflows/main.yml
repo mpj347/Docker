@@ -26,4 +26,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: mpj347/docker:latest
+          tags: mpj347/hello-world:latest
